@@ -511,6 +511,133 @@
             font-size: 0.875rem;
         }
 
+        /* Reviews Section */
+        .reviews {
+            padding: 6rem 2rem;
+        }
+
+        .reviews-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .rating-display {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .stars {
+            display: flex;
+            gap: 0.25rem;
+            color: #fbbf24;
+            font-size: 1.5rem;
+        }
+
+        .rating-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .rating-source {
+            color: var(--color-text-muted);
+            font-size: 0.875rem;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 1.75rem;
+            transition: all 0.3s;
+        }
+
+        .review-card:hover {
+            border-color: var(--color-accent);
+            transform: translateY(-4px);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .reviewer-avatar {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-accent), #d97706);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--color-bg);
+        }
+
+        .reviewer-info {
+            flex: 1;
+        }
+
+        .reviewer-name {
+            font-weight: 600;
+            font-size: 0.9375rem;
+            margin-bottom: 0.125rem;
+        }
+
+        .review-meta {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+        }
+
+        .review-stars {
+            color: #fbbf24;
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .review-title {
+            font-weight: 600;
+            font-size: 0.9375rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-text);
+        }
+
+        .review-text {
+            color: var(--color-text-muted);
+            font-size: 0.875rem;
+            line-height: 1.65;
+        }
+
+        .verified-badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--color-accent);
+            font-size: 0.6875rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 900px) {
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Quote Section */
         .quote {
             padding: 4rem 2rem;
@@ -689,11 +816,11 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <span class="hero-badge">New Release &mdash; October 2024</span>
+                <span class="hero-badge">5.0 Stars on Amazon &mdash; October 2024</span>
                 <h1>HUMANLIKE<span>:</span></h1>
                 <p class="hero-subtitle">The AI Transformation</p>
                 <p class="hero-description">
-                    From the dawn of human civilization to the era of intelligent machines. Explore how AI is reshaping industries, society, and our very understanding of intelligence.
+                    What happens when machines can think, reason, and create just like us? From the dawn of human civilization to the era of intelligent machines, explore the profound impact of AI as it reshapes industries, society, and our very understanding of intelligence.
                 </p>
                 <div class="hero-ctas">
                     <a href="#buy" class="btn-primary">
@@ -716,10 +843,10 @@
     <section class="promise">
         <div class="section-content">
             <div class="section-header">
-                <span class="section-label">Why This Book</span>
-                <h2 class="section-title">Navigate the AI Revolution with Confidence</h2>
+                <span class="section-label">About the Book</span>
+                <h2 class="section-title">A Journey Through AI's Rise to Humanlike Intelligence</h2>
                 <p class="section-description">
-                    Whether you're a business leader, student, or curious mind, HUMANLIKE provides the insights you need to understand and prepare for an AI-transformed world.
+                    Victor del Rosal, author of <em>Disruption: Emerging Technologies and the Future of Work</em> (#12 on BookAuthority's Best Technology Trends Books), takes readers on a journey through the development of AI&mdash;from its early beginnings to the rise of humanlike intelligence systems that emulate our most treasured abilities: creativity, language, and reasoning. With a blend of technical insight and philosophical reflection, HUMANLIKE presents a balanced view of the opportunities and challenges ahead, urging businesses, leaders, and individuals to prepare for a future where AI is not just a tool but a partner in human progress.
                 </p>
             </div>
             <div class="promise-grid">
@@ -813,6 +940,57 @@
                         <span class="credential">GenAI Corporate Trainer</span>
                         <span class="credential">#12 BookAuthority</span>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="section-content">
+            <div class="reviews-header">
+                <div class="rating-display">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <span class="rating-text">5.0 out of 5</span>
+                </div>
+                <p class="rating-source">Based on Amazon customer reviews</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">MR</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Maria Radil</div>
+                            <div class="review-meta">United States &bull; Nov 16, 2024</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="review-title">Humanlike.... excellent!!!!</div>
+                    <p class="review-text">I just finished reading HUMANLIKE: The AI Transformation, and it's definitely worth checking out. The coolest part? The way it explains complex AI concepts like "hAI" in a way that's easy to follow. The level of detail gives a solid foundation for anyone wanting to go deeper into the topic. Plus, the practical applications presented encourage you to think about how these ideas could work in real-world scenarios.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">HS</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Herb Sewell</div>
+                            <div class="review-meta">United States &bull; Nov 12, 2024</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="review-title">Science Fiction becomes Reality</div>
+                    <p class="review-text">What once appeared to be the work of sci-fi authors, is now becoming reality with AI. A great read that causes you to think about the serious impact on mankind, its implications, and what lies ahead for us as AI becomes more integrated in our lives.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">A</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Akshen<span class="verified-badge">Verified Purchase</span></div>
+                            <div class="review-meta">India &bull; Nov 17, 2024</div>
+                        </div>
+                    </div>
+                    <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <div class="review-title">Must Read to understand how the future will be shaped by AI</div>
+                    <p class="review-text">The Book HUMANLIKE: The AI Transformation by Victor is a must-read for anyone curious about the intersection of technology, society, and philosophy. More than just a treatise on artificial intelligence, it serves as a profound reflection on what it means to be human in a world increasingly shaped by intelligent machines.</p>
                 </div>
             </div>
         </div>
