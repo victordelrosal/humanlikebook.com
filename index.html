@@ -382,6 +382,119 @@
             font-size: 0.9375rem;
         }
 
+        /* Intro Section */
+        .intro {
+            padding: 6rem 2rem;
+            background: var(--color-surface);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .intro-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .intro-definition {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .intro-word {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            margin-bottom: 0.25rem;
+        }
+
+        .intro-phonetic {
+            font-size: 0.9375rem;
+            color: var(--color-text-muted);
+            font-style: italic;
+            margin-bottom: 0.75rem;
+        }
+
+        .intro-pos {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .intro-meaning {
+            font-size: 1.125rem;
+            color: var(--color-text);
+            line-height: 1.6;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .intro-story {
+            margin-bottom: 2.5rem;
+        }
+
+        .intro-story p {
+            color: var(--color-text-muted);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1.25rem;
+        }
+
+        .intro-story p:last-child {
+            margin-bottom: 0;
+        }
+
+        .intro-highlight {
+            color: var(--color-text);
+            font-weight: 500;
+        }
+
+        .intro-questions {
+            background: var(--color-surface-raised);
+            border: 1px solid var(--color-border);
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .intro-questions h3 {
+            font-family: var(--font-display);
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: var(--color-accent);
+        }
+
+        .intro-questions ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .intro-questions li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.875rem;
+            color: var(--color-text-muted);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        .intro-questions li:last-child {
+            margin-bottom: 0;
+        }
+
+        .intro-questions li::before {
+            content: "?";
+            position: absolute;
+            left: 0;
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+
         /* Author Section */
         .author {
             padding: 6rem 2rem;
@@ -864,6 +977,46 @@
                     <div class="promise-icon">&#9878;</div>
                     <h3>Navigate the Ethics</h3>
                     <p>Explore critical questions about bias, privacy, safety, and what it means to be human in the age of AI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro" id="intro">
+        <div class="section-content">
+            <div class="intro-content">
+                <div class="section-header">
+                    <span class="section-label">From the Introduction</span>
+                    <h2 class="section-title">Why HUMANLIKE?</h2>
+                </div>
+
+                <div class="intro-definition">
+                    <div class="intro-word">Humanlike</div>
+                    <div class="intro-phonetic">/ˈhjuːmənlaɪk/</div>
+                    <div class="intro-pos">Adjective</div>
+                    <p class="intro-meaning">An entity, object, or behavior that shares certain attributes typically associated with humans, even if the entity is not human itself.</p>
+                </div>
+
+                <div class="intro-story">
+                    <p>When I saw the <span class="intro-highlight">I, Robot</span> movie in 2004 it never occurred to me that I was watching anything but sci-fi. Fast forward a few years and humanoid robots like the Atlas by Boston Dynamics blur the line between science fiction and science fact.</p>
+
+                    <p>As I wrote <span class="intro-highlight">Disruption: Emerging Technologies and the Future of Work</span> in 2015 it did not seem possible for AI to write essays and poems, generate images, code in virtually any programming language and do everything else that generative AI is capable of; I was convinced that creativity was off-limits for AI.</p>
+
+                    <p>After tinkering furiously with ChatGPT for a month or so, it happened; I realized I was not dealing with a toy or niche technology. <span class="intro-highlight">I got an intuition of genAI's transformative potential</span> and while it's not human, it is eerily close: humanlike intelligence we can converse and create with.</p>
+
+                    <p>I noticed a pattern in people's reactions: they spanned from fascination to terror (or both). Some would get emotional or even upset. Then it hit me: <span class="intro-highlight">we are interacting with a technology that can deal in arguably our two most precious currencies: intelligence and language</span>, allowing it to produce outputs once exclusive to human minds. The thought that something could emulate such cherished capabilities, that define us as a species, was difficult to process.</p>
+                </div>
+
+                <div class="intro-questions">
+                    <h3>Questions This Book Explores</h3>
+                    <ul>
+                        <li>How is it even possible to create AI systems that exhibit humanlike intelligence?</li>
+                        <li>What is the likely impact of humanlike AI to enhance decision-making, drive innovation, and boost productivity while maintaining ethical standards?</li>
+                        <li>What are the broader societal, ethical, and regulatory implications of AI systems that can think, learn, and adapt like humans?</li>
+                        <li>What transformative role will humanlike AI play across industries, and how can individuals and organizations prepare for the evolving career landscapes?</li>
+                        <li>Which skills might be valuable and in-demand in future job markets?</li>
+                    </ul>
                 </div>
             </div>
         </div>
