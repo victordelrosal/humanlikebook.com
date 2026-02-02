@@ -321,7 +321,16 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 1.25rem;
-            font-size: 1.5rem;
+        }
+
+        .promise-icon svg {
+            width: 24px;
+            height: 24px;
+            stroke: var(--color-bg);
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         .promise-card h3 {
@@ -517,8 +526,18 @@
         }
 
         .audience-icon {
-            font-size: 2.5rem;
             margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .audience-icon svg {
+            width: 40px;
+            height: 40px;
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
 
         .audience-card h3 {
@@ -631,6 +650,21 @@
             width: 180px;
             height: 180px;
             border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+        }
+
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+
+        .author-image-placeholder {
+            width: 180px;
+            height: 180px;
+            border-radius: 16px;
             background: linear-gradient(135deg, var(--color-surface-raised), var(--color-border));
             display: flex;
             align-items: center;
@@ -729,10 +763,9 @@
             box-shadow: 0 8px 24px rgba(255, 153, 0, 0.3);
         }
 
-        .amazon-btn img {
-            width: 20px;
-            height: 20px;
-            object-fit: contain;
+        .amazon-btn .amazon-logo {
+            width: 26px;
+            height: 26px;
         }
 
         .formats {
@@ -1108,17 +1141,17 @@
             </div>
             <div class="promise-grid">
                 <div class="promise-card">
-                    <div class="promise-icon">&#127891;</div>
+                    <div class="promise-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
                     <h3>Origin &amp; Trajectory</h3>
                     <p>Understand where AI came from, where it's heading, and develop an intuition for its transformative potential.</p>
                 </div>
                 <div class="promise-card">
-                    <div class="promise-icon">&#9878;</div>
+                    <div class="promise-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
                     <h3>Balanced Perspective</h3>
                     <p>Get an honest view of risks, benefits, and broader implications&mdash;not hype, not fear, but clarity.</p>
                 </div>
                 <div class="promise-card">
-                    <div class="promise-icon">&#128736;</div>
+                    <div class="promise-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div>
                     <h3>Original Frameworks</h3>
                     <p>Apply practical tools like the Human:Machine Cognitive Operations Ratio and AGI Preparedness Scenario Analysis.</p>
                 </div>
@@ -1145,7 +1178,7 @@
                 <div class="intro-story">
                     <p>When I saw the <span class="intro-highlight">I, Robot</span> movie in 2004 it never occurred to me that I was watching anything but sci-fi. Fast forward a few years and humanoid robots like the Atlas by Boston Dynamics blur the line between science fiction and science fact.</p>
 
-                    <p>As I wrote <span class="intro-highlight">Disruption: Emerging Technologies and the Future of Work</span> in 2015 it did not seem possible for AI to write essays and poems, generate images, code in virtually any programming language and do everything else that generative AI is capable of; I was convinced that creativity was off-limits for AI.</p>
+                    <p>As I wrote <em class="intro-highlight">Disruption: Emerging Technologies and the Future of Work</em> in 2015 it did not seem possible for AI to write essays and poems, generate images, code in virtually any programming language and do everything else that generative AI is capable of; I was convinced that creativity was off-limits for AI.</p>
 
                     <p>After tinkering furiously with ChatGPT for a month or so, it happened; I realized I was not dealing with a toy or niche technology. <span class="intro-highlight">I got an intuition of genAI's transformative potential</span> and while it's not human, it is eerily close: humanlike intelligence we can converse and create with.</p>
 
@@ -1230,17 +1263,17 @@
             </div>
             <div class="audience-grid">
                 <div class="audience-card">
-                    <div class="audience-icon">&#128188;</div>
+                    <div class="audience-icon"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
                     <h3>Business Leaders</h3>
                     <p>Decision makers looking for frameworks and practical strategies for integrating AI thoughtfully into their organisations.</p>
                 </div>
                 <div class="audience-card">
-                    <div class="audience-icon">&#127891;</div>
+                    <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
                     <h3>Students &amp; Professionals</h3>
                     <p>Those interested in understanding the balanced risks, benefits, and transformative potential of AI for their careers.</p>
                 </div>
                 <div class="audience-card">
-                    <div class="audience-icon">&#128161;</div>
+                    <div class="audience-icon"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></div>
                     <h3>The Generally Curious</h3>
                     <p>Tech enthusiasts who want a clear, accessible overview of humanlike AI and its broader implications for society.</p>
                 </div>
@@ -1252,7 +1285,7 @@
     <section class="author">
         <div class="section-content">
             <div class="author-content">
-                <div class="author-image">VdR</div>
+                <div class="author-image"><img src="img/victor-del-rosal.jpg" alt="Victor del Rosal"></div>
                 <div class="author-info">
                     <h2>Victor del Rosal</h2>
                     <p class="author-title">Chief AI Officer &bull; Lecturer &bull; Author</p>
@@ -1381,15 +1414,15 @@
             </p>
             <div class="amazon-buttons">
                 <a href="https://www.amazon.com/Humanlike-Transformation-Victor-del-Rosal/dp/B0D9JCJVQ8" target="_blank" rel="noopener" class="amazon-btn">
-                    <img src="img/amazon.jpg" alt="Amazon">
+                    <svg class="amazon-logo" viewBox="0 0 100 100"><path d="M50 10 C30 10 15 25 15 40 C15 55 30 65 50 65 C70 65 85 55 85 40 C85 25 70 10 50 10 M35 35 C35 30 42 27 50 27 C58 27 65 30 65 35 L65 42 C65 47 58 50 50 50 C42 50 35 47 35 42 L35 35 M50 32 C45 32 42 34 42 37 L42 40 C42 43 45 45 50 45 C55 45 58 43 58 40 L58 37 C58 34 55 32 50 32" fill="#fff"/><path d="M10 75 Q50 60 90 75" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M85 72 L92 78 L88 70" fill="#fff"/></svg>
                     Amazon US
                 </a>
                 <a href="https://www.amazon.co.uk/Humanlike-Transformation-Victor-del-Rosal/dp/B0D9JCJVQ8" target="_blank" rel="noopener" class="amazon-btn">
-                    <img src="img/amazon.jpg" alt="Amazon">
+                    <svg class="amazon-logo" viewBox="0 0 100 100"><path d="M50 10 C30 10 15 25 15 40 C15 55 30 65 50 65 C70 65 85 55 85 40 C85 25 70 10 50 10 M35 35 C35 30 42 27 50 27 C58 27 65 30 65 35 L65 42 C65 47 58 50 50 50 C42 50 35 47 35 42 L35 35 M50 32 C45 32 42 34 42 37 L42 40 C42 43 45 45 50 45 C55 45 58 43 58 40 L58 37 C58 34 55 32 50 32" fill="#fff"/><path d="M10 75 Q50 60 90 75" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M85 72 L92 78 L88 70" fill="#fff"/></svg>
                     Amazon UK
                 </a>
                 <a href="https://www.amazon.de/Humanlike-Transformation-Victor-del-Rosal/dp/B0D9JCJVQ8" target="_blank" rel="noopener" class="amazon-btn">
-                    <img src="img/amazon.jpg" alt="Amazon">
+                    <svg class="amazon-logo" viewBox="0 0 100 100"><path d="M50 10 C30 10 15 25 15 40 C15 55 30 65 50 65 C70 65 85 55 85 40 C85 25 70 10 50 10 M35 35 C35 30 42 27 50 27 C58 27 65 30 65 35 L65 42 C65 47 58 50 50 50 C42 50 35 47 35 42 L35 35 M50 32 C45 32 42 34 42 37 L42 40 C42 43 45 45 50 45 C55 45 58 43 58 40 L58 37 C58 34 55 32 50 32" fill="#fff"/><path d="M10 75 Q50 60 90 75" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/><path d="M85 72 L92 78 L88 70" fill="#fff"/></svg>
                     Amazon EU
                 </a>
             </div>
